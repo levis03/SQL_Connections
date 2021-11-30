@@ -72,6 +72,7 @@
       <DependentUpon>Stock.mdf</DependentUpon>
     </Content>
     <Content Include="Customer.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="LOGIN.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="Customer.aspx.designer.cs">
       <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="db.cs" />
     <Compile Include="LOGIN.aspx.cs">

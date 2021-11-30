@@ -28,6 +28,9 @@ namespace Levis
             {
                 lblConfirm.Text = "Login successful";
                 lblConfirm.ForeColor = System.Drawing.Color.Green;
+                //create a session
+                Session["customerID"] = dt.Rows[0]["CustID"].ToString();
+                Response.Redirect("~/Dashboard.aspx");
             }
             else
             {
