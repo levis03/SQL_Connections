@@ -72,6 +72,7 @@
       <DependentUpon>Stock.mdf</DependentUpon>
     </Content>
     <Content Include="Customer.aspx" />
+    <Content Include="LOGIN.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,10 +84,33 @@
       <DependentUpon>Customer.aspx</DependentUpon>
     </Compile>
     <Compile Include="db.cs" />
+    <Compile Include="LOGIN.aspx.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN.aspx.designer.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stock.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Stock.xsc">
+      <DependentUpon>Stock.xsd</DependentUpon>
+    </Content>
+    <None Include="Stock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Stock.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Stock.xss">
+      <DependentUpon>Stock.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
